@@ -35,16 +35,16 @@
         </div>
         <div class="flex sm:justify-between items-center gap-10">
           <div class="flex gap-2">
-            <button class="bg-slate-200 px-3 py-2 rounded-full">
+            <button id="phone-plus" class="bg-slate-200 px-3 py-2 rounded-full">
               <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
             </button>
-            <input class="bg-slate-100 w-12 rounded-full text-center" type="text" value="1">
-            <button class="bg-slate-200 px-3 py-2 rounded-full">
+            <input readonly id="phone-input" class="bg-slate-100 w-12 rounded-full text-center" type="text" value="1">
+            <button id="phone-minus" class="btn bg-slate-200 px-3 py-2 rounded-full">
               <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
             </button>
           </div>
           <div class="flex gap-14 justify-between items-center mr-12">
-            <h3 class="text-xl font-medium text-gray-900">$<span>1219</span></h3>
+            <h3 class="text-xl font-medium text-gray-900">$<span id="phone-price">1219</span></h3>
           <img class="cursor-pointer" src="./images/remove.png" alt="">
           </div>
         </div>
@@ -54,22 +54,21 @@
           <figure class="w-32">
             <img class="" src="./images/product-2.png" alt="">
           </figure>
-          <h2 class="text-xl text-gray-900">iPhone 11 128GB Black
-          </h2>
+          <h2 class="text-xl text-gray-900">iPhone 11 Case</h2>
         </div>
         <div class="flex sm:justify-between items-center gap-10">
           <div class="flex gap-2">
-            <button class="bg-slate-200 px-3 py-2 rounded-full">
+            <button id="case-plus" class="btn bg-slate-200 px-3 py-2 rounded-full">
               <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M432 256c0 17.69-14.33 32.01-32 32.01H256v144c0 17.69-14.33 31.99-32 31.99s-32-14.3-32-31.99v-144H48c-17.67 0-32-14.32-32-32.01s14.33-31.99 32-31.99H192v-144c0-17.69 14.33-32.01 32-32.01s32 14.32 32 32.01v144h144C417.7 224 432 238.3 432 256z"/></svg>
             </button>
-            <input class="bg-slate-100 w-12 rounded-full text-center" type="text" value="1">
-            <button class="bg-slate-200 px-3 py-2 rounded-full">
+            <input readonly id="case-input" class="bg-slate-100 w-12 rounded-full text-center" type="text" value="1">
+            <button id="case-minus" class="btn bg-slate-200 px-3 py-2 rounded-full">
               <svg class="w-4 h-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M400 288h-352c-17.69 0-32-14.32-32-32.01s14.31-31.99 32-31.99h352c17.69 0 32 14.3 32 31.99S417.7 288 400 288z"/></svg>
             </button>
           </div>
           <div class="flex gap-14 justify-between items-center mr-12">
-            <h3 class="text-xl font-medium text-gray-900">$<span>59</span></h3>
-          <img class="cursor-pointer" src="./images/remove.png" alt="">
+            <h3 class="text-xl font-medium text-gray-900">$<span id="case-price">59</span></h3>
+          <img class="btn cursor-pointer" src="./images/remove.png" alt="">
           </div>
         </div>
       </div>
@@ -78,7 +77,7 @@
 
 
     <section class="my-9">
-      <div class="bg-emerald-300 rounded-2xl flex flex-col justify-center p-4 gap-4">
+      <div class="bg-emerald-300 rounded-2xl flex flex-col justify-center p-4 sm:px-12 gap-4">
         <div class="flex justify-between items-center">
           <h3 class="text-2xl text-gray-900">Subtotal</h3>
           <h3 class="text-2xl font-medium text-gray-900">$<span>1219</span></h3>
